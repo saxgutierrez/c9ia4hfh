@@ -2,16 +2,16 @@
 #
 # Table name: rooms
 #
-#  id          :integer          not null, primary key
-#  title       :string
-#  description :text
-#  beds        :integer
-#  guests      :integer
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  image_url   :string
+#  id              :integer          not null, primary key
+#  title           :string
+#  description     :text(400)
+#  beds            :integer
+#  guests          :integer
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  image_url       :string
+#  price_per_night :integer
 #
-
 
 class Room < ActiveRecord::Base
 	validates :title, presence: true, on: :create

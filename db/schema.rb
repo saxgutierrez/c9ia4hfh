@@ -14,11 +14,11 @@ ActiveRecord::Schema.define(version: 20180210013211) do
 
   create_table "rooms", force: :cascade do |t|
     t.string   "title"
-    t.text     "description"
+    t.text     "description",     limit: 400
     t.integer  "beds"
     t.integer  "guests"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.string   "image_url"
     t.integer  "price_per_night"
   end
