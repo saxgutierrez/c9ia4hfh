@@ -19,4 +19,5 @@ class Room < ActiveRecord::Base
 	validates :beds, presence: true, numericality: true, on: :create
 	validates :guests, presence: true,numericality: true, on: :create
 	validates :image_url, presence: true, on: :create
+	validates :price_per_night, presence: true, numericality: true, on: :create
 end
