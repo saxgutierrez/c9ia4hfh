@@ -10,6 +10,16 @@
 </head>
 <body>
 
+     <%
+=begin %>
+aquí abajo van las alertas
+<%
+=end %>
+
+<% if flash[:notice] %>
+  <div class="alert alert-info"><%= flash[:notice] %></div>
+<% end %>
+
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
